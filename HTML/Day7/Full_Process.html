@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete HTML Concepts Website with Profile">
+  <title>Learn HTML - My Profile & Concepts</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My HTML Learning Website</h1>
+    <nav>
+      <a href="#profile">My Profile</a> | 
+      <a href="#summary">Summary</a> |
+      <a href="#intro">Introduction</a> |
+      <a href="#tags">Tags</a> |
+      <a href="#elements">Elements</a> |
+      <a href="#attributes">Attributes</a> |
+      <a href="#semantic">Semantic HTML</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#tables">Tables</a> |
+      <a href="#forms">Forms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile">
+      <h2>My Profile</h2>
+      <img src="assets/image/banner/1.jpeg" alt= "Profile Picture" width="200">
+      <p><strong>Name:</strong>Abinaya</p>
+      <p><strong>Course:</strong> Full Stack Development</p>
+      <p><strong>Location:</strong> Chennai</p>
+      <p>I created this website to showcase everything I learned in HTML — from headings and paragraphs to forms and semantic elements.</p>
+    </section>
+
+    <hr>
+    <section id="summary">
+      <h2>HTML Concepts Summary</h2>
+      <p>This website demonstrates the following key concepts I learned in HTML:</p>
+      <ul>
+        <li>What is HTML?</li>
+        <li>HTML Tags</li>
+        <li>HTML Elements</li>
+        <li>Block-level vs Inline Elements</li>
+        <li>HTML Attributes</li>
+        <li>Semantic vs Non-Semantic HTML</li>
+        <li>Lists (Ordered & Unordered)</li>
+        <li>Tables</li>
+        <li>Forms</li>
+      </ul>
+      <p>Scroll down or use the navigation menu to explore each concept in detail.</p>
+    </section>
+
+    <hr>
+    <section id="intro">
+      <h2>What is HTML?</h2>
+      <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It provides the structure of a webpage by using tags and elements.</p>
+    </section>
+
+    <hr>
+
+    <section id="tags">
+      <h2>HTML Tags</h2>
+      <p>An HTML tag is a keyword enclosed inside angle brackets < >.Tags tell the browser what type of content it is dealing with.
+      <p>Example:<code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p>
+    </section>
+
+     <hr>
+
+    <section id="elements">
+      <h2>HTML Elements</h2>
+      <p>An HTML element is the complete structure consisting of the opening tag, content, and closing tag.</p>
+      <p>Example: <code>&lt;h1&gt;My Heading&lt;/h1&gt;</code></p>
+    </section>
+
+    <hr>
+
+    <section id="elements">
+      <h2>Block-level vs Inline Elements</h2>
+      <p>Block-level elements start on a new line and take up the full width available.</p>
+      <p><strong>Example:</strong><code>&lt;h1&gt;My Website&lt;/h1&gt;</code></p>
+      <p><code>&lt;p&gt;Welcome to my website.&lt;/p&gt;</code></p>
+      <p><code>&lt;div&gt;About My Website&lt;/div&gt;</code></p>
+      <p><strong>Output:</strong>My Website</p>
+      <p>Welcome to my website.</p>
+      <p>About My Website</p>
+      <p>Inline elements do not start on a new line and only take up as much width as necessary.</p>
+        <p><strong>Example:</strong><code>&lt;span&gt;Hello&lt;/span&gt;</code></p>
+        <p><code>&lt;span&gt;Students&lt;/span&gt;</code></p>
+        <p><code>&lt;span&gt;Welcome.&lt;/span&gt;</code></p>
+        <p><strong>Output:</strong>Hello Students Welcome.</p>
+    </section>
+
+    <hr>
+
+    <section id="attributes">
+      <h2>HTML Attributes</h2>
+      <p>An attribute provides additional information about an HTML element.Attributes are written inside the opening tag. 
+      <p>Example:<code>&lt;img src="photo.jpg" alt="My Photo" width="200"&gt;</code></p>
+    </section>
+
+    <hr>
+
+    <section id="semantic">
+      <h2>Semantic vs Non-Semantic HTML</h2>
+      <p><strong>Semantic tags</strong> clearly tells the browser and developers what the content reprsents.Semantic HTML provides Better Readability,Better Accessibility, Better SEO,Better Maintanability</p>
+      <p><strong>Example:</strong><p><code>&lt;header&gt;</code></p><p><code>&lt;article&gt;</code></p><p><code>&lt;footer&gt;</code></p>
+      <p><strong>Non-semantic tags</strong>Non Semantic Elements do not clearly describe the meaning of their content. The two most common examples are 
+       <p><code>&lt;div&gt;</code></p><p><code>&lt;span&gt;</code></p>
+    </section>
+
+    <hr>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <p>Lists are used to display a collection of related items.There are three main types of lists.</p>
+    <ol>
+    <li>Unordered List</li>
+    <li>Ordered List</li>
+    <li>Description List</li>
+    </ol>
+      <h3>1.Unordered List</h3>
+      <p>An unordered list is a list of items without a specific order.It displays items with bullet points</p>
+    <p><strong>Example:</strong></p><code>&lt;ul&gt;</code></p>
+       <p><code>&lt;li&gt;HTML&lt;/li&gt;</code></p>
+       <p><code>&lt;li&gt;CSS&lt;/li&gt;</code></p>
+       <p><code>&lt;li&gt;JavaScript&lt;/li&gt;</code></p>
+      <p><code>&lt;ul&gt;</code></p>
+      <p><strong>Output:</strong></p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+      <h3>2.Ordered List</h3>
+      <p>An ordered list is a list of items with a specific order.It displays items with numbers or letters.</p>
+      <p><strong>Example:</strong></p><code>&lt;ol&gt;</code></p>
+       <p><code>&lt;li&gt;Learn HTML&lt;/li&gt;</code></p>
+       <p><code>&lt;li&gt;Learn CSS&lt;/li&gt;</code></p>
+       <p><code>&lt;li&gt;Learn JavaScript&lt;/li&gt;</code></p>
+      <p><code>&lt;ol&gt;</code></p>
+      <p><strong>Output:</strong></p>
+      <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+      </ol>  
+      <h3>3.Description List</h3>
+      <p>A description list is a list of terms and their descriptions.</p>
+      <p><strong>Example:</strong></p><code>&lt;dl&gt;</code></p>
+       <p><code>&lt;dt&gt;HTML&lt;/dt&gt;</code></p>
+       <p><code>&lt;dd&gt;Used to structure wepages.&lt;/dd&gt;</code></p>
+       <p><code>&lt;dt&gt;CSS&lt;/dt&gt;</code></p>
+       <p><code>&lt;dd&gt;Used to style webpages.&lt;/dd&gt;</code></p>
+      <p><code>&lt;dl&gt;</code></p>
+      <p><strong>Output:</strong></p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Used to structure webpages.</dd>
+            <dt>CSS</dt>
+            <dd>Used to style webpages.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <p>Tables are used to display data in a tabular format. They consist of rows and columns.</p>
+      <p><strong> Table Structure:</strong></p>
+      <p><code>&lt;table&gt;</code></p>
+        <p><code>&lt;tr&gt;</code></p>
+           <p><code>&lt;th&gt;</code>-Header<code>&lt;/th&gt;</code></p>
+           <p><code>&lt;th&gt;</code>-header<code>&lt;/th&gt;</code></p>
+        <p><code>&lt;/tr&gt;</code></p>
+        <p><code>&lt;tr&gt;</code></p>
+              <p><code>&lt;td&gt;</code>-Data<code>&lt;/td&gt;</code></p>
+              <p><code>&lt;td&gt;</code>-Data<code>&lt;/td&gt;</code></p>
+        <p><code>&lt;/tr&gt;</code></p>
+      <p><code>&lt;/table&gt;</code></p>
+      <p><strong>Example:</strong></p>
+      <table border="5" cellpadding="10" cellspacing="3">
+        <tr>
+          <th>Name</th><th>Age</th><th>Course</th>
+        </tr>
+        <tr>
+          <td>Abinaya</td><td>22</td><td>Full Stack</td>
+        </tr>
+        <tr>
+          <td>Yakesh</td><td>23</td><td>Java</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <p>Forms are used to collect data from users.</p>
+      <p><strong>Example of forms such as:</strong></p>
+      <ul>
+        <li>Login</li>
+        <li>Registration</li>
+        <li>Contact</li>
+        <li>Search</li>
+        <li>Feedback</li>
+        <li>Job Application</li>
+        <li>Payment Information</li>
+      </ul>
+      <p><strong>Form Structure:</strong></p>
+      <p><code>&lt;form&gt;</code></p>
+      <p><code>&lt;label&gt;Name:&lt;/label&gt;</code></p>
+      <p><code>&lt;input type="text" name="name"&gt;</code></p>
+      <p><code>&lt;label&gt;Email:&lt;/label&gt;</code></p>
+      <p><code>&lt;input type="email" name="email"&gt;</code></p>
+      <p><code>&lt;label&gt;Password:&lt;/label&gt;</code></p>
+      <p><code>&lt;input type="password" name="password"&gt;</code></p>
+      <p><code>&lt;/form&gt;</code></p>
+
+
+      <form>
+        <label>Name: <input type="text" name="name"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Password: <input type="password" name="password"></label><br>
+        <label>Course:
+          <select name="course">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+          </select>
+        </label><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Abinaya — HTML Learning Showcase</p>
+  </footer>
+</body>
+</html>
+
+
