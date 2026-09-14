@@ -1,0 +1,18 @@
+  .parent{ 
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border: solid 1px #ccc;
+    margin: 10px;
+}
+
+.boxone{
+    background-color: #ffffff6d;
+    border: 1px solid #ccc;
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}  
+

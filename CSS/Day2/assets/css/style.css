@@ -1,17 +1,24 @@
-*{
-    background-color: rgb(8, 196, 149);
-    padding: 2px;;
+.title{
+  background-color:rgb(147, 103, 192);
+  color:rgb(96, 48, 154);
 }
-h3{
-    background-color: beige;
-    color:rgb(64, 61, 58)
+.section{
+  background-color:lightgoldenrodyellow;
+  color:darkgoldenrod;
 }
-.Details{
-    color:blanchedalmond;
+.student{
+  background-color:lightblue;
+  color:darkblue;
 }
-#title{
-    color:rgb(109, 19, 19);
+.topic{
+  background-color:lightcoral;
+  color:darkred;
 }
-h3,p{
-    color:black
+.status{
+  background-color:rgb(218, 243, 171);
+  color:rgb(24, 26, 23);
+}
+.teacher{
+  background-color:lightcoral;
+  color:rgb(103, 41, 61);
 }
