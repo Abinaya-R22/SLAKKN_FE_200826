@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+<style>
+    .bar{
+        background-color: blueviolet;
+        padding: 2px;
+        width: 400px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .login{
+        background-color: aqua;
+        color: white;
+    }
+    .register{
+        background-color: brown;
+        color: white;
+    }
+    .contact{
+        background-color: navy;
+        color: white;
+    }
+
+.login:hover{
+    background-color:burlywood ;
+    color: red;
+    border: 2px solid black;
+
+}
+.register:hover{
+    background-color:rgb(88, 236, 137) ;
+    color: rgb(241, 31, 209);
+    border: 2px solid black;
+    }
+.contact:hover{
+    background-color:rgb(173, 175, 235);
+    color:rgb(234, 138, 138);
+    border: 2px solid black;
+
+}  
+
+
+</style>
+</head>
+<body>
+    <div class="bar">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+        <button class="contact">Contact</button>
+    </div>
+</body>
