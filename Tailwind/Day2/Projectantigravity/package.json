@@ -1,0 +1,22 @@
+{
+  "name": "ai-multiverse",
+  "version": "1.0.0",
+  "description": "AI MULTIVERSE — Clone Yourself. Choose Your Future. An interactive sci-fi developer multiverse exploration project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ai",
+    "multiverse",
+    "tailwind",
+    "html5",
+    "javascript",
+    "full-stack"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

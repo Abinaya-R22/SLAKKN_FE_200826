@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Timeline — AI MULTIVERSE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            space: {
+              950: '#03050c',
+              900: '#060a17',
+              800: '#0d1329',
+              700: '#172042'
+            },
+            cyanGlow: '#06b6d4',
+            purpleGlow: '#a855f7',
+            blueGlow: '#3b82f6'
+          },
+          fontFamily: {
+            orbitron: ['Orbitron', 'monospace', 'sans-serif'],
+            space: ['Space Grotesk', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-space-950 text-slate-100 min-h-screen relative flex flex-col justify-between selection:bg-purple-600 selection:text-white">
+
+  <!-- Particle Starfield -->
+  <canvas id="starfieldCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 p-0.5 shadow-[0_0_20px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] transition-all">
+            <div class="w-full h-full bg-space-950 rounded-[10px] flex items-center justify-center">
+              <span class="font-orbitron font-black text-cyan-400 text-lg">Ω</span>
+            </div>
+          </div>
+          <div>
+            <span class="font-orbitron font-extrabold text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-300 to-pink-400">
+              AI MULTIVERSE
+            </span>
+            <span class="block text-[10px] font-space tracking-widest text-cyan-400 uppercase -mt-1">
+              Clone Yourself
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+          <a href="index.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all">Home</a>
+          <a href="multiverse.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all">Multiverse</a>
+          <a href="clone.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all">My Clones</a>
+          <a href="timeline.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-purple-400 bg-purple-500/10 border border-purple-500/30">Timeline</a>
+          <a href="compare.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all">Compare</a>
+          <a href="future.html" class="px-3.5 py-2 rounded-lg text-sm font-space font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all">My Future</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button id="soundToggleBtn" aria-label="Toggle Futuristic Audio SFX" class="p-2.5 rounded-xl glass-panel text-slate-400 hover:text-cyan-400 border border-slate-700/60 transition-all">
+            <svg id="soundIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
+          </button>
+          <a href="future.html" class="hidden sm:inline-flex btn-futuristic px-4 py-2 rounded-xl text-xs font-orbitron font-bold text-white bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500">
+            Explore 2030 →
+          </a>
+          <button id="mobileMenuToggle" class="md:hidden p-2 rounded-xl text-slate-300 hover:text-white glass-panel border border-slate-700/60">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-800 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-slate-300">Home</a>
+        <a href="multiverse.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-slate-300">Multiverse</a>
+        <a href="clone.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-slate-300">My Clones</a>
+        <a href="timeline.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-purple-400 bg-purple-500/10">Timeline</a>
+        <a href="compare.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-slate-300">Compare</a>
+        <a href="future.html" class="block px-3 py-2 rounded-lg text-sm font-space font-medium text-slate-300">My Future</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Timeline Content (PAGE 6) -->
+  <main class="relative z-10 flex-1 px-4 sm:px-6 lg:px-8 py-12 max-w-7xl mx-auto w-full">
+    
+    <!-- Header -->
+    <div class="text-center space-y-3 mb-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full glass-panel border border-purple-500/30 text-xs font-orbitron font-semibold text-purple-300">
+        <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+        <span>TEMPORAL EVOLUTION SCANNER</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-orbitron font-black text-white tracking-wide">
+        WATCH YOUR CLONES EVOLVE
+      </h1>
+
+      <p class="text-sm sm:text-base font-space text-slate-400 max-w-2xl mx-auto">
+        Track the five-year developmental trajectory from 2026 to 2030 across all three distinct technical paths.
+      </p>
+    </div>
+
+    <!-- Interactive Clone Selector Pill Filter -->
+    <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+      <button data-filter="all" class="timeline-clone-filter px-5 py-2.5 rounded-xl font-orbitron text-xs font-bold transition-all bg-purple-600 text-white shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+        ALL CLONES
+      </button>
+
+      <button data-filter="clone-01" class="timeline-clone-filter px-5 py-2.5 rounded-xl font-orbitron text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+        🧑 CLONE 01 (WITHOUT AI)
+      </button>
+
+      <button data-filter="clone-02" class="timeline-clone-filter px-5 py-2.5 rounded-xl font-orbitron text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+        🤖 CLONE 02 (WITH AI)
+      </button>
+
+      <button data-filter="clone-03" class="timeline-clone-filter px-5 py-2.5 rounded-xl font-orbitron text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">
+        🧠 CLONE 03 (BUILDING AI)
+      </button>
+    </div>
+
+    <!-- Timeline Progression Container (rendered dynamically via JS) -->
+    <div id="timelineCardsGrid" class="w-full">
+      <!-- Injected by script.js -->
+    </div>
+
+    <!-- Bottom Navigation Callout -->
+    <div class="mt-12 text-center flex flex-wrap items-center justify-center gap-4">
+      <a href="compare.html" class="btn-futuristic px-6 py-3 rounded-xl glass-panel border border-slate-700 text-slate-300 hover:text-white hover:border-purple-500 text-xs font-orbitron font-semibold flex items-center gap-2">
+        <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span>Examine Side-by-Side Comparison Matrix</span>
+      </a>
+
+      <a href="future.html" class="btn-futuristic px-6 py-3 rounded-xl glass-panel border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-500 text-xs font-orbitron font-semibold flex items-center gap-2">
+        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        <span>Generate Your 2030 Profile</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Reusable Footer -->
+  <footer class="relative z-10 border-t border-slate-800/80 glass-nav py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="font-orbitron font-bold text-cyan-400 text-sm">AI MULTIVERSE</span>
+        <span class="text-xs text-slate-500">|</span>
+        <span class="text-xs font-space text-slate-400">“Watch your skills and systems evolve year by year.”</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs font-space text-slate-400">
+        <a href="index.html" class="hover:text-cyan-400">Home</a>
+        <a href="clone.html" class="hover:text-cyan-400">Clones</a>
+        <a href="multiverse.html" class="hover:text-cyan-400">Universes</a>
+        <a href="compare.html" class="hover:text-cyan-400">Compare</a>
+        <a href="future.html" class="hover:text-cyan-400">2030 Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
