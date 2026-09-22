@@ -1,0 +1,356 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            Js task one
+            <a href="JS/Day1/index.html">Day 1 - Task 1</a>
+             <a href="">Day 1 - Task 2</a>
+              <a href="">Day 1 - Task 3</a>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Task Portal</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <!-- <header class="bg-indigo-600 text-white text-center py-6">
+    <h1 class="text-4xl font-bold">My Task Portal</h1>
+    <p class="mt-2">Subjects → Days → Tasks</p>
+  </header>
+
+  <!-- Main Content -->
+  <!-- <main class="max-w-3xl mx-auto mt-10 space-y-6">
+
+    <!-- HTML -->
+    <!-- <details class="bg-white shadow rounded-lg">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-indigo-600 hover:bg-indigo-50">
+        HTML
+      </summary>
+      <div class="px-6 pb-4 space-y-2">
+        <details>
+          <summary class="cursor-pointer font-medium text-gray-700 hover:text-indigo-600">Day 1</summary>
+          <div class="ml-6 space-y-1">
+            <a href="HTML/Day1/task1.html" class="block text-gray-600 hover:text-indigo-600">Task 1</a>
+            <a href="HTML/Day1/task2.html" class="block text-gray-600 hover:text-indigo-600">Task 2</a>
+          </div>
+        </details> --> -->
+      <!-- </div>
+    </details>
+
+    <!-- CSS -->
+    <!-- <details class="bg-white shadow rounded-lg">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-green-600 hover:bg-green-50">
+        CSS
+      </summary>
+      <div class="px-6 pb-4 space-y-2">
+        <details>
+          <summary class="cursor-pointer font-medium text-gray-700 hover:text-green-600">Day 1</summary>
+          <div class="ml-6 space-y-1">
+            <a href="CSS/Day1/task1.html" class="block text-gray-600 hover:text-green-600">Task 1</a>
+            <a href="CSS/Day1/task2.html" class="block text-gray-600 hover:text-green-600">Task 2</a>
+          </div>
+        </details>
+      </div>
+    </details> -->
+
+    <!-- JavaScript -->
+    <!-- <details class="bg-white shadow rounded-lg">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-yellow-600 hover:bg-yellow-50">
+        JavaScript
+      </summary>
+      <div class="px-6 pb-4 space-y-2">
+        <details>
+          <summary class="cursor-pointer font-medium text-gray-700 hover:text-yellow-600">Day 1</summary>
+          <div class="ml-6 space-y-1">
+            <a href="JS/Day1/task1.html" class="block text-gray-600 hover:text-yellow-600">Task 1</a>
+            <a href="JS/Day1/task2.html" class="block text-gray-600 hover:text-yellow-600">Task 2</a>
+          </div>
+        </details>
+      </div>
+    </details> --> -->
+
+    <!-- Bootstrap -->
+    <!-- <details class="bg-white shadow rounded-lg">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-purple-600 hover:bg-purple-50">
+        Bootstrap
+      </summary>
+      <div class="px-6 pb-4 space-y-2">
+        <details>
+          <summary class="cursor-pointer font-medium text-gray-700 hover:text-purple-600">Day 1</summary>
+          <div class="ml-6 space-y-1">
+            <a href="BS/Day1/task1.html" class="block text-gray-600 hover:text-purple-600">Task 1</a>
+            <a href="BS/Day1/task2.html" class="block text-gray-600 hover:text-purple-600">Task 2</a>
+          </div>
+        </details>
+      </div>
+    </details> -->
+
+    <!-- Tailwind -->
+    <!-- <details class="bg-white shadow rounded-lg">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-pink-600 hover:bg-pink-50">
+        Tailwind
+      </summary>
+      <div class="px-6 pb-4 space-y-2">
+        <details>
+          <summary class="cursor-pointer font-medium text-gray-700 hover:text-pink-600">Day 1</summary>
+          <div class="ml-6 space-y-1">
+            <a href="Tailwind/Day1/task1.html" class="block text-gray-600 hover:text-pink-600">Task 1</a>
+            <a href="Tailwind/Day1/task2.html" class="block text-gray-600 hover:text-pink-600">Task 2</a>
+          </div>
+        </details>
+      </div>
+    </details>
+
+  </main>
+
+</body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #2b2420;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #ffffff;
+      border-bottom: 1px solid #d7d7d7;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 2.25rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #24312b;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      color: #656565;
+    }
+
+    main {
+      width: min(100% - 2rem, 72rem);
+      margin: 2.5rem auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .task-card {
+      min-height: 14rem;
+      border: 2px solid #2f3a35;
+      border-radius: 4px;
+      background: #dcefe3;
+      box-shadow: 8px 8px 0 #4d8b68;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .task-card:hover {
+      box-shadow: 12px 12px 0 #4d8b68;
+      transform: translate(-4px, -4px);
+    }
+
+    .task-card:nth-child(2) {
+      background: #d9e9f7;
+      box-shadow: 8px 8px 0 #4d789e;
+    }
+
+    .task-card:nth-child(2):hover {
+      box-shadow: 12px 12px 0 #4d789e;
+    }
+
+    .task-card:nth-child(3) {
+      background: #f8e5bd;
+      box-shadow: 8px 8px 0 #b78132;
+    }
+
+    .task-card:nth-child(3):hover {
+      box-shadow: 12px 12px 0 #b78132;
+    }
+
+    .task-card:nth-child(4) {
+      background: #f3d9d1;
+      box-shadow: 8px 8px 0 #ad665d;
+    }
+
+    .task-card:nth-child(4):hover {
+      box-shadow: 12px 12px 0 #ad665d;
+    }
+
+    .task-card:nth-child(5) {
+      background: #e3def1;
+      box-shadow: 8px 8px 0 #75659d;
+    }
+
+    .task-card:nth-child(5):hover {
+      box-shadow: 12px 12px 0 #75659d;
+    }
+
+    .task-card-content {
+      padding: 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .task-card h2 {
+      margin-bottom: 0;
+      color: #24312b;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .task-card p {
+      margin: 0.5rem 0 0;
+      color: #5b625d;
+      line-height: 1.5;
+    }
+
+    .task-link {
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: auto;
+      padding: 0.625rem 1rem;
+      border: 2px solid #24312b;
+      border-radius: 2px;
+      background: #e3a06f;
+      color: #24312b;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .task-link:hover {
+      background: #24312b;
+      color: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Task Portal</h1>
+    <p>Choose a subject to explore its tasks</p>
+  </header>
+
+  <!-- Card Grid -->
+  <main>
+
+    <!-- HTML Card -->
+    <div class="task-card">
+      <div class="task-card-content">
+        <h2>HTML</h2>
+        <p>Learn structure, semantic tags, and build pages.</p>
+        <a href="HTML/index.html" class="task-link">
+          View Tasks
+        </a>
+      </div>
+    </div>
+
+    <!-- CSS Card -->
+    <div class="task-card">
+      <div class="task-card-content">
+        <h2>CSS</h2>
+        <p>Style your pages with colors, layouts, and effects.</p>
+        <a href="CSS/index.html" class="task-link">
+          View Tasks
+        </a>
+      </div>
+    </div>
+
+    <!-- JavaScript Card -->
+    <div class="task-card">
+      <div class="task-card-content">
+        <h2>JavaScript</h2>
+        <p>Add interactivity and logic to your projects.</p>
+        <a href="JS/index.html" class="task-link">
+          View Tasks
+        </a>
+      </div>
+    </div>
+
+    <!-- Bootstrap Card -->
+    <div class="task-card">
+      <div class="task-card-content">
+        <h2>Bootstrap</h2>
+        <p>Quickly design responsive layouts with Bootstrap.</p>
+        <a href="BS/index.html" class="task-link">
+          View Tasks
+        </a>
+      </div>
+    </div>
+
+    <!-- Tailwind Card -->
+    <div class="task-card">
+      <div class="task-card-content">
+        <h2>Tailwind</h2>
+        <p>Utility-first CSS framework for modern design.</p>
+        <a href="Tailwind/index.html" class="task-link">
+          View Tasks
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+

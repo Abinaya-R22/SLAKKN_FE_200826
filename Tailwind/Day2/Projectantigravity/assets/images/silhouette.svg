@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Glowing background aura -->
+  <circle cx="100" cy="100" r="80" fill="url(#auraGrad)" opacity="0.3"/>
+  
+  <!-- Developer head and silhouette -->
+  <circle cx="100" cy="65" r="24" fill="#06b6d4" opacity="0.9"/>
+  <path d="M50 150 C50 115, 75 105, 100 105 C125 105, 150 115, 150 150 Z" fill="#38bdf8" opacity="0.8"/>
+  
+  <!-- Laptop device -->
+  <rect x="70" y="140" width="60" height="24" rx="4" fill="#0f172a" stroke="#c084fc" stroke-width="2"/>
+  <line x1="80" y1="152" x2="120" y2="152" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  
+  <defs>
+    <radialGradient id="auraGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 100) rotate(90) scale(80)">
+      <stop stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

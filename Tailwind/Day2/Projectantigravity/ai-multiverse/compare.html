@@ -115,7 +115,6 @@
         <input id="compareSearch" type="text" placeholder="Search across skills, tools, challenges..." class="bg-transparent border-0 text-sm text-slate-200 placeholder-slate-500 focus:outline-none w-full font-space">
       </div>
 
-      <!-- Toggle Button Requested in Prompt -->
       <div class="flex items-center gap-3">
         <button id="toggleAllRows" class="btn-futuristic px-5 py-2.5 rounded-xl text-xs font-orbitron font-bold text-white bg-purple-600 hover:bg-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.4)]">
           COMPARE TOGGLE
@@ -128,7 +127,6 @@
       <div class="overflow-x-auto">
         <table class="w-full text-left border-collapse min-w-[700px]">
           
-          <!-- Columns -->
           <thead>
             <tr class="border-b border-slate-800 bg-slate-900/80">
               <th class="p-4 sm:p-6 text-xs font-orbitron font-bold text-slate-400 uppercase tracking-wider w-1/4">
@@ -158,135 +156,62 @@
             </tr>
           </thead>
 
-          <!-- 8 Rows matching exact prompt -->
           <tbody class="divide-y divide-slate-800/60 text-xs sm:text-sm font-space">
             
-            <!-- Row 1: Development Style -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                Development Style
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Manual and deliberate. Writing all logic, tests, and configurations line-by-line without automated generative assistance.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Symbiotic and conversational. Directing AI companions for code scaffolding, debugging, and continuous iterative improvement.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Probabilistic and architecture-focused. Designing training loops, fine-tuning checkpoints, prompt graphs, and agent consensus.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">Development Style</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Manual and deliberate. Writing all logic, tests, and configurations line-by-line without automated generative assistance.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Symbiotic and conversational. Directing AI companions for code scaffolding, debugging, and continuous iterative improvement.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Probabilistic and architecture-focused. Designing training loops, fine-tuning checkpoints, prompt graphs, and agent consensus.</td>
             </tr>
 
-            <!-- Row 2: AI Usage -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                AI Usage
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                None or strictly minimal. Problem-solving relies purely on official documentation, books, and fundamental algorithmic deduction.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Daily pair-programmer. Code generation, automated test writing, error triage, doc generation, and architecture consultation.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Core product platform. Building vector search spaces, custom fine-tuned weights, RAG systems, and autonomous agent swarms.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">AI Usage</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">None or strictly minimal. Problem-solving relies purely on official documentation, books, and fundamental algorithmic deduction.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Daily pair-programmer. Code generation, automated test writing, error triage, doc generation, and architecture consultation.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Core product platform. Building vector search spaces, custom fine-tuned weights, RAG systems, and autonomous agent swarms.</td>
             </tr>
 
-            <!-- Row 3: Core Skills -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                Core Skills
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Data structures, algorithmic time complexity, memory optimization, browser engines, relational database normalization.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Prompt engineering, context injection, API orchestration, rapid debugging, full-stack prototyping, automated CI/CD pipelines.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Python, PyTorch, transformer architectures, vector embeddings, RAG design, agentic workflow coordination, GPU computing.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">Core Skills</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Data structures, algorithmic time complexity, memory optimization, browser engines, relational database normalization.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Prompt engineering, context injection, API orchestration, rapid debugging, full-stack prototyping, automated CI/CD pipelines.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Python, PyTorch, transformer architectures, vector embeddings, RAG design, agentic workflow coordination, GPU computing.</td>
             </tr>
 
-            <!-- Row 4: Tools -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                Tools
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Vim / VS Code (raw), Git CLI, Bash, PostgreSQL, Docker, standard compiler toolchains, Chrome DevTools.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Cursor, GitHub Copilot, ChatGPT, Claude Code, Vercel v0, automated test synthesis bots, modern web frameworks.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                HuggingFace, LangChain, Pinecone, Chroma, OpenAI/Anthropic APIs, Ollama, Triton, cloud cluster orchestration.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">Tools</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Vim / VS Code (raw), Git CLI, Bash, PostgreSQL, Docker, standard compiler toolchains, Chrome DevTools.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Cursor, GitHub Copilot, ChatGPT, Claude Code, Vercel v0, automated test synthesis bots, modern web frameworks.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">HuggingFace, LangChain, Pinecone, Chroma, OpenAI/Anthropic APIs, Ollama, Triton, cloud cluster orchestration.</td>
             </tr>
 
-            <!-- Row 5: Projects -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                Projects
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Deterministic payment gateways, embedded devices, high-security transaction logs, air-gapped server software.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                High-velocity SaaS applications, interactive portals, automated workflow suites, responsive modern web products.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Autonomous customer support agents, generative knowledge search, multi-modal reasoning engines, cognitive assistants.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">Projects</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Deterministic payment gateways, embedded devices, high-security transaction logs, air-gapped server software.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">High-velocity SaaS applications, interactive portals, automated workflow suites, responsive modern web products.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Autonomous customer support agents, generative knowledge search, multi-modal reasoning engines, cognitive assistants.</td>
             </tr>
 
-            <!-- Row 6: Learning Focus -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">
-                Learning Focus
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Language specifications, protocol standards (HTTP/3, WebSockets), Linux system calls, computer science fundamentals.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Emerging AI developer workflows, multi-modal APIs, context caching, automated verification, system synthesis.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Frontier machine learning research, attention mechanisms, fine-tuning methodologies, autonomous multi-agent consensus.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-white bg-slate-900/30">Learning Focus</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Language specifications, protocol standards (HTTP/3, WebSockets), Linux system calls, computer science fundamentals.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Emerging AI developer workflows, multi-modal APIs, context caching, automated verification, system synthesis.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Frontier machine learning research, attention mechanisms, fine-tuning methodologies, autonomous multi-agent consensus.</td>
             </tr>
 
-            <!-- Row 7: Possible Challenges -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-rose-300/90 bg-slate-900/30">
-                Possible Challenges
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">
-                Keeping up with rapidly changing development tools and matching the initial prototyping speed of AI-assisted developers.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">
-                Avoiding over-reliance on AI suggestions; triaging hallucinations; verifying subtle bugs in generated codebases.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">
-                High computational costs; managing non-deterministic edge cases; rapid model deprecation and framework churn.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-rose-300/90 bg-slate-900/30">Possible Challenges</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">Keeping up with rapidly changing development tools and matching the initial prototyping speed of AI-assisted developers.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">Avoiding over-reliance on AI suggestions; triaging hallucinations; verifying subtle bugs in generated codebases.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-400">High computational costs; managing non-deterministic edge cases; rapid model deprecation and framework churn.</td>
             </tr>
 
-            <!-- Row 8: Possible Opportunities -->
             <tr class="compare-row hover:bg-slate-900/40 transition-colors">
-              <td class="p-4 sm:p-6 font-orbitron font-bold text-emerald-300/90 bg-slate-900/30">
-                Possible Opportunities
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                High trust for zero-dependency critical infrastructure, deep understanding of performance bottlenecks, pristine code reviews.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Multiplying personal output to build and ship entire products single-handedly in record time with automated tooling.
-              </td>
-              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">
-                Leading the technological frontier, founding AI startups, and architecting the intelligent agent systems of tomorrow.
-              </td>
+              <td class="p-4 sm:p-6 font-orbitron font-bold text-emerald-300/90 bg-slate-900/30">Possible Opportunities</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">High trust for zero-dependency critical infrastructure, deep understanding of performance bottlenecks, pristine code reviews.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Multiplying personal output to build and ship entire products single-handedly in record time with automated tooling.</td>
+              <td class="p-4 sm:p-6 border-l border-slate-800 text-slate-300">Leading the technological frontier, founding AI startups, and architecting the intelligent agent systems of tomorrow.</td>
             </tr>
 
           </tbody>
@@ -294,7 +219,6 @@
       </div>
     </div>
 
-    <!-- Navigation Prompt -->
     <div class="mt-12 text-center flex flex-wrap items-center justify-center gap-4">
       <a href="future.html" class="btn-futuristic px-8 py-4 rounded-xl text-sm font-orbitron font-bold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 shadow-[0_0_25px_rgba(168,85,247,0.4)] flex items-center gap-2">
         <span>Proceed to Decision Diagnostic</span>
@@ -304,7 +228,6 @@
 
   </main>
 
-  <!-- Reusable Footer -->
   <footer class="relative z-10 border-t border-slate-800/80 glass-nav py-8 mt-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">

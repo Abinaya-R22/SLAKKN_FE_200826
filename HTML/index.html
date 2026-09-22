@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tasks</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #241817 0%, #49302b 100%);
+            color: #fff7ed;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        header p {
+            color: #e9b99d;
+        }
+
+        main {
+            width: min(100% - 2rem, 58rem);
+            margin: 2rem auto;
+        }
+
+        a {
+            color: #e9b99d;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .days {
+            display: grid;
+            gap: 1rem;
+        }
+
+        details {
+            padding: 1rem 1.25rem;
+            border-radius: .75rem;
+            background: #d88968;
+            color: #321e1b;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .3);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .links {
+            display: grid;
+            gap: .6rem;
+            padding-top: 1rem;
+        }
+
+        .links a {
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            background: #8f443b;
+            color: #fff7ed;
+        }
+
+        .empty {
+            color: #f0c5ad;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Tasks</h1>
+        <p>Select a day to open its task output.</p>
+    </header>
+    <main>
+        <p><a href="../index.html">Back to Task Portal</a></p>
+        <section class="days">
+            <details open>
+                <summary>Day 1</summary>
+                <div class="links">
+                    <a href="Day1/Story.html">Story</a></div>
+            </details>
+            <details>
+                <summary>Day 2</summary>
+                <div class="links">
+                    <a href="Day2/index.html">Task</a></div>
+            </details>
+            <details>
+                <summary>Day 3</summary>
+                <div class="links">
+                    <a href="Day3/Task1.html">Task 1</a>
+                    <a href="Day3/Task2.html">Task 2</a>
+                    <a href="Day3/Task3.html">Task 3</a>
+                    <a href="Day3/Task4.html">Task 4</a>
+                </div>
+            </details>
+            <details>
+                <summary>Day 4</summary>
+                 <div class="links"><a href="Day2/index.html">Open Day 2 output</a></div>
+            </details>
+            <details>
+                <summary>Day 5</summary>
+                 <div class="links"><a href="Day2/index.html">Open Day 2 output</a></div>
+            </details>
+            <details>
+                <summary>Day 6</summary>
+                 <div class="links"><a href="Day2/index.html">Open Day 2 output</a></div>
+            </details>
+            <details>
+                <summary>Day 7</summary>
+                 <div class="links"><a href="Day2/index.html">Open Day 2 output</a></div>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>

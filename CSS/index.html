@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tasks</title>
+  <style>
+    body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: linear-gradient(135deg, #241817 0%, #49302b 100%); color: #fff7ed; }
+    header { padding: 2rem 1rem; text-align: center; background: rgba(15,11,24,.5); border-bottom: 1px solid rgba(255,255,255,.15); }
+    h1 { margin: 0; } header p { color: #e9b99d; }
+    main { width: min(100% - 2rem, 58rem); margin: 2rem auto; }
+    a { color: #e9b99d; font-weight: 700; text-decoration: none; }
+    .days { display: grid; gap: 1rem; }
+    details { padding: 1rem 1.25rem; border-radius: .75rem; background: #d88968; color: #321e1b; box-shadow: 0 10px 22px rgba(0,0,0,.32); } summary { cursor: pointer; font-weight: 700; }
+    .links { display: grid; gap: .6rem; padding-top: 1rem; }
+    .links a { padding: .75rem 1rem; border-radius: .5rem; background: #8f443b; color: #fff7ed; }
+  </style>
+</head>
+<body>
+  <header><h1>CSS Tasks</h1><p>Select a day to open its task output.</p></header>
+  <main><p><a href="../index.html">Back to Task Portal</a></p><section class="days">
+    <details open><summary>Day 1</summary><div class="links"><a href="Day1/Day1_CSS.pdf">Day 1 CSS task PDF</a></div></details>
+    <details><summary>Day 2</summary><div class="links"><a href="Day2/index.html">Open Day 2 output</a></div></details>
+    <details><summary>Day 3</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 4</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 5</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 6</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 7</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 8</summary><p>Tasks will appear here when added.</p></details>
+    <details><summary>Day 9</summary><p>Tasks will appear here when added.</p></details>
+  </section></main>
+</body>
+</html>

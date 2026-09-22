@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Tasks</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #241817 0%, #49302b 100%);
+            color: #fff7ed
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, .15)
+        }
+
+        h1 {
+            margin: 0
+        }
+
+        header p {
+            color: #e9b99d
+        }
+
+        main {
+            width: min(100% - 2rem, 58rem);
+            margin: 2rem auto
+        }
+
+        a {
+            color: #e9b99d;
+            font-weight: 700;
+            text-decoration: none
+        }
+
+        details {
+            margin-bottom: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: .75rem;
+            background: #d88968;
+            color: #321e1b;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .3)
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700
+        }
+
+        .links {
+            padding-top: 1rem
+        }
+
+        .links a {
+            display: block;
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            background: #8f443b;
+            color: #fff7ed
+        }
+
+        .links a:hover {
+            background: #6d302d
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tailwind Tasks</h1>
+        <p>Select a day to open its task output.</p>
+    </header>
+    <main>
+        <p><a href="../index.html">Back to Task Portal</a></p>
+        <details open>
+            <summary>Day 1</summary>
+            <div class="links"><a href="Day1/assets/index.html">Open Day 1 task output</a></div>
+        </details>
+        <details>
+            <summary>Day 2</summary>
+            <p>Tasks are being added.</p>
+        </details>
+    </main>
+</body>
+
+</html>
