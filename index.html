@@ -1,130 +1,18 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <div>
-            Js task one
-            <a href="JS/Day1/index.html">Day 1 - Task 1</a>
-             <a href="">Day 1 - Task 2</a>
-              <a href="">Day 1 - Task 3</a>
-        </div>
-    </div>
-</body>
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Task Portal</title>
-</head>
-<body class="bg-gray-100 font-sans">
-
-  <!-- Header -->
-  <!-- <header class="bg-indigo-600 text-white text-center py-6">
-    <h1 class="text-4xl font-bold">My Task Portal</h1>
-    <p class="mt-2">Subjects → Days → Tasks</p>
-  </header>
-
-  <!-- Main Content -->
-  <!-- <main class="max-w-3xl mx-auto mt-10 space-y-6">
-
-    <!-- HTML -->
-    <!-- <details class="bg-white shadow rounded-lg">
-      <summary class="cursor-pointer px-6 py-4 font-semibold text-indigo-600 hover:bg-indigo-50">
-        HTML
-      </summary>
-      <div class="px-6 pb-4 space-y-2">
-        <details>
-          <summary class="cursor-pointer font-medium text-gray-700 hover:text-indigo-600">Day 1</summary>
-          <div class="ml-6 space-y-1">
-            <a href="HTML/Day1/task1.html" class="block text-gray-600 hover:text-indigo-600">Task 1</a>
-            <a href="HTML/Day1/task2.html" class="block text-gray-600 hover:text-indigo-600">Task 2</a>
-          </div>
-        </details> --> -->
-      <!-- </div>
-    </details>
-
-    <!-- CSS -->
-    <!-- <details class="bg-white shadow rounded-lg">
-      <summary class="cursor-pointer px-6 py-4 font-semibold text-green-600 hover:bg-green-50">
-        CSS
-      </summary>
-      <div class="px-6 pb-4 space-y-2">
-        <details>
-          <summary class="cursor-pointer font-medium text-gray-700 hover:text-green-600">Day 1</summary>
-          <div class="ml-6 space-y-1">
-            <a href="CSS/Day1/task1.html" class="block text-gray-600 hover:text-green-600">Task 1</a>
-            <a href="CSS/Day1/task2.html" class="block text-gray-600 hover:text-green-600">Task 2</a>
-          </div>
-        </details>
-      </div>
-    </details> -->
-
-    <!-- JavaScript -->
-    <!-- <details class="bg-white shadow rounded-lg">
-      <summary class="cursor-pointer px-6 py-4 font-semibold text-yellow-600 hover:bg-yellow-50">
-        JavaScript
-      </summary>
-      <div class="px-6 pb-4 space-y-2">
-        <details>
-          <summary class="cursor-pointer font-medium text-gray-700 hover:text-yellow-600">Day 1</summary>
-          <div class="ml-6 space-y-1">
-            <a href="JS/Day1/task1.html" class="block text-gray-600 hover:text-yellow-600">Task 1</a>
-            <a href="JS/Day1/task2.html" class="block text-gray-600 hover:text-yellow-600">Task 2</a>
-          </div>
-        </details>
-      </div>
-    </details> --> -->
-
-    <!-- Bootstrap -->
-    <!-- <details class="bg-white shadow rounded-lg">
-      <summary class="cursor-pointer px-6 py-4 font-semibold text-purple-600 hover:bg-purple-50">
-        Bootstrap
-      </summary>
-      <div class="px-6 pb-4 space-y-2">
-        <details>
-          <summary class="cursor-pointer font-medium text-gray-700 hover:text-purple-600">Day 1</summary>
-          <div class="ml-6 space-y-1">
-            <a href="BS/Day1/task1.html" class="block text-gray-600 hover:text-purple-600">Task 1</a>
-            <a href="BS/Day1/task2.html" class="block text-gray-600 hover:text-purple-600">Task 2</a>
-          </div>
-        </details>
-      </div>
-    </details> -->
-
-    <!-- Tailwind -->
-    <!-- <details class="bg-white shadow rounded-lg">
-      <summary class="cursor-pointer px-6 py-4 font-semibold text-pink-600 hover:bg-pink-50">
-        Tailwind
-      </summary>
-      <div class="px-6 pb-4 space-y-2">
-        <details>
-          <summary class="cursor-pointer font-medium text-gray-700 hover:text-pink-600">Day 1</summary>
-          <div class="ml-6 space-y-1">
-            <a href="Tailwind/Day1/task1.html" class="block text-gray-600 hover:text-pink-600">Task 1</a>
-            <a href="Tailwind/Day1/task2.html" class="block text-gray-600 hover:text-pink-600">Task 2</a>
-          </div>
-        </details>
-      </div>
-    </details>
-
-  </main>
-
-</body>
-</html> --> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Task Portal</title>
   <style>
+    :root {
+      --site-background: #0d1b2a;
+      --card-background: #1b263b;
+      --button-background: #3a86ff;
+      --button-hover: #2563eb;
+      --text-color: #f5f7fa;
+      --accent-dark: #415a77;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -133,15 +21,15 @@
       margin: 0;
       min-height: 100vh;
       font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #2b2420;
+      background: var(--site-background);
+      color: var(--text-color);
     }
 
     header {
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem;
       text-align: center;
-      background: #ffffff;
-      border-bottom: 1px solid #d7d7d7;
+      background: var(--site-background);
+      border-bottom: 1px solid var(--accent-dark);
     }
 
     h1,
@@ -155,17 +43,17 @@
       font-size: 2.25rem;
       line-height: 1.1;
       letter-spacing: -0.02em;
-      color: #24312b;
+      color: var(--text-color);
     }
 
     header p {
       margin: 0.5rem 0 0;
-      color: #656565;
+      color: var(--text-color);
     }
 
     main {
       width: min(100% - 2rem, 72rem);
-      margin: 2.5rem auto;
+      margin: 1.5rem auto;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1.75rem;
@@ -176,57 +64,57 @@
     }
 
     .task-card {
-      min-height: 14rem;
-      border: 2px solid #2f3a35;
+      min-height: 11rem;
+      border: 2px solid var(--accent-dark);
       border-radius: 4px;
-      background: #dcefe3;
-      box-shadow: 8px 8px 0 #4d8b68;
+      background: var(--card-background);
+      box-shadow: 8px 8px 0 var(--accent-dark);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .task-card:hover {
-      box-shadow: 12px 12px 0 #4d8b68;
+      box-shadow: 12px 12px 0 var(--accent-dark);
       transform: translate(-4px, -4px);
     }
 
     .task-card:nth-child(2) {
-      background: #d9e9f7;
-      box-shadow: 8px 8px 0 #4d789e;
+      background: var(--card-background);
+      box-shadow: 8px 8px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(2):hover {
-      box-shadow: 12px 12px 0 #4d789e;
+      box-shadow: 12px 12px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(3) {
-      background: #f8e5bd;
-      box-shadow: 8px 8px 0 #b78132;
+      background: var(--card-background);
+      box-shadow: 8px 8px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(3):hover {
-      box-shadow: 12px 12px 0 #b78132;
+      box-shadow: 12px 12px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(4) {
-      background: #f3d9d1;
-      box-shadow: 8px 8px 0 #ad665d;
+      background: var(--card-background);
+      box-shadow: 8px 8px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(4):hover {
-      box-shadow: 12px 12px 0 #ad665d;
+      box-shadow: 12px 12px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(5) {
-      background: #e3def1;
-      box-shadow: 8px 8px 0 #75659d;
+      background: var(--card-background);
+      box-shadow: 8px 8px 0 var(--accent-dark);
     }
 
     .task-card:nth-child(5):hover {
-      box-shadow: 12px 12px 0 #75659d;
+      box-shadow: 12px 12px 0 var(--accent-dark);
     }
 
     .task-card-content {
-      padding: 1.5rem;
+      padding: 1.25rem;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -234,14 +122,14 @@
 
     .task-card h2 {
       margin-bottom: 0;
-      color: #24312b;
+      color: var(--text-color);
       font-size: 1.5rem;
       line-height: 1.2;
     }
 
     .task-card p {
       margin: 0.5rem 0 0;
-      color: #5b625d;
+      color: var(--text-color);
       line-height: 1.5;
     }
 
@@ -250,18 +138,18 @@
       align-self: flex-start;
       margin-top: auto;
       padding: 0.625rem 1rem;
-      border: 2px solid #24312b;
+      border: 2px solid var(--accent-dark);
       border-radius: 2px;
-      background: #e3a06f;
-      color: #24312b;
+      background: var(--button-background);
+      color: var(--text-color);
       font-weight: 600;
       text-decoration: none;
       transition: background 0.2s ease, color 0.2s ease;
     }
 
     .task-link:hover {
-      background: #24312b;
-      color: #ffffff;
+      background: var(--button-hover);
+      color: var(--text-color);
     }
 
     @media (max-width: 900px) {
