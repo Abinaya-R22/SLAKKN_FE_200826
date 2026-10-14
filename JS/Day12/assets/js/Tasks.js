@@ -18,14 +18,14 @@ const link=document.getElementById("link")
 
 image.src="https://img.magnific.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80"
 image.alt="Waterfall"
-image.width=200
+image.style.width="100px"
 link.href="https://www.google.com"
 link.textContent="Visit Google"
 link.style.cursor="pointer"
 link.style.backgroundColor="black"
 link.style.color="white"
 link.style.padding="10px"
-link.style.borderRadius="10px"
+link.style.borderRadius="2px"
 
 
 

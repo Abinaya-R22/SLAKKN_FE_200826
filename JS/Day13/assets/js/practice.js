@@ -1,3 +1,5 @@
+// TASK 1 – CHANGE HEADING COLOR
+
 const para=document.getElementById("para");
 const btnHide=document.getElementById("btnHide");
 const btnShow=document.getElementById("btnShow");
