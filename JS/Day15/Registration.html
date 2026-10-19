@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration System</title>
+</head>
+<body>
+    <form id="formData">
+        <input type="text" id="employeename" placeholder="Enter the employeename">
+        <input type="number" id="employeeage" placeholder="Enter the employeeage">
+        <input type="text" id="department" placeholder="Enter the department">
+        <input type="text" id="salary" placeholder="Enter the salary">
+
+        <input type="submit" value="Register">
+    </form>
+    <div style="padding: 20px;">
+        <table border="1" cellpadding="3" cellspacing="3">
+            <thead>
+                <th>S.no</th>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Age</th>
+                <th>Department</th>
+                <th>Salary</th>
+                
+            </thead>
+            <tbody id="showing"> 
+
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/registration.js"></script>
+</body>
+</html>
