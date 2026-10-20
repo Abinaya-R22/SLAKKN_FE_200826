@@ -45,7 +45,7 @@ const addtoCart=()=>{
     return inner   
 }
 
-const subtractingData=calculate()
-subtractingData()
+const subData=calculate()
+subtractingData(1000)
 subtractingData(1000)
 subtractingData(1000)
