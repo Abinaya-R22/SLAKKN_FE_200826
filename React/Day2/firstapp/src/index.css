@@ -1,0 +1,16 @@
+.banner{
+  background-color: gray;
+  padding:10px;
+  height:100px;
+  margin-bottom:10px;
+}
+
+.btn{
+background-color:darkmagenta;
+padding:10px;
+border-radius:10px;
+border:none;
+width:200px;
+color:white;
+margin-left: 10px;
+}
