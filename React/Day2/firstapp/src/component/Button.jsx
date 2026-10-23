@@ -1,25 +1,25 @@
-const Button=()=>{
-    return(<>
-    <div className="banner">
+// const Button=()=>{
+//     return(<>
+//     <div className="banner">
         
-        <button>This is button </button>
+//         <button>This is button </button>
         
-    </div>
-    </>)
-}
-export default Button
+//     </div>
+//     </>)
+// }
+// export default Button
 
-const AlertButton=()=>{
-    return(<>
-    <button className="btn">This is Alert</button>
-    </>)
-}
+// const AlertButton=()=>{
+//     return(<>
+//     <button className="btn">This is Alert</button>
+//     </>)
+// }
 
-export const NewAlertButton=()=>{
-    return(<>
-    <button className="btn">
-        This is New Alert
-    </button>
-    <AlertButton/>
-    </>)
-}
+// export const NewAlertButton=()=>{
+//     return(<>
+//     <button className="btn">
+//         This is New Alert
+//     </button>
+//     <AlertButton/>
+//     </>)
+// }
