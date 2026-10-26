@@ -1,0 +1,17 @@
+.product{
+  background-color: rgb(197, 120, 120);
+  color: black;
+  padding: 16px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 300px;
+  height:fit-content
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

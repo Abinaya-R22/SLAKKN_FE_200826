@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: darkslateblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    padding: 15px;
+}
+.navbar a{
+    color: rgb(202, 191, 191);
+    
+}
+.hero h4{
+    font-size: large;
+    color:darkslateblue;
+}
+.hero p{
+    margin-top: 1%;
+}
+.hero{
+  
+  text-align: center;
+  margin-top: 3%;
+}
+
+.info{
+    width: 200px; 
+    margin:30px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center; 
+}
+footer{
+    background-color: darkslateblue;
+    color:white;
+    position: fixed;
+    padding:10px;
+    text-align: center;
+    bottom:0;
+    width:100%;
+}
+
