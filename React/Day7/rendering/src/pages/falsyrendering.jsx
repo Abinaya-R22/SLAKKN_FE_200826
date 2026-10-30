@@ -1,11 +1,14 @@
 
 
-const falsyrendering = () => {
+const Falsyrendering = () => {
+  let falsy= undefined
   return (<>
-    <div>
-      
-    </div>
-  </>)
+  <div>
+    {falsy??"Abi"}
+  </div>
+  </>
+    
+  )
 }
 
-export default falsyrendering
+export default Falsyrendering

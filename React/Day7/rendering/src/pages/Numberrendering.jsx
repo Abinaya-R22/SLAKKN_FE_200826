@@ -1,11 +1,14 @@
 
 
 const Numberrendering = () => {
+  const number=123456
   return (<>
-    <div>
-      
-    </div>
- </> )
+<div>
+  <h2>{123456}</h2>
+</div>
+  </>
+    
+  )
 }
 
 export default Numberrendering
