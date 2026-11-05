@@ -1,58 +1,54 @@
-import { useState } from 'react'
-// const App = () => {
-
-// const [datas, setDatas] = useState("")
-// const [showdatas, setShowDatas] = useState(null)
-
-// const handleChange = (e) => {
-//   setDatas(e.target.value)
-// }
-
-// const handleClick = (e) => {
-//   e.preventDefault()
-
-// if(datas%2===0){
-//   setShowDatas("Even Number")
-// }
-// else{
-//   setShowDatas("Odd Number")
-// }
-
-
-//   // setShowDatas(datas)
-
-
-// }
+import { useState } from 'react';
 
 const App = () => {
   
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    age: ""
+  });
 
+  const [showData, setShowData] = useState(null);
 
+const handleChange = (e) => {
+  const { name, value } = e.target;
 
-
-
-
-
-
+  setUserData({
+    ...userData,
+    [name]: value,
+  });
+};
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setShowData(userData);
+}
 
 
 
 
   return (<>
-    <div>
-     <form>
-      <input type="text" onChange={handleChange} placeholder='Enter your name' />
-      <button onClick={handleClick}>Submit</button>
+      <h1>Student Registration Form</h1>
+     <form onSubmit={handleSubmit}>
+       <input type="text" name="name" value={userData.name} onChange={handleChange} placeholder="Enter your name" />
+       <input type="email" name="email" value={userData.email} onChange={handleChange} placeholder="Enter your email" />
+       <input type="number" name="age" value={userData.age} onChange={handleChange} placeholder="Enter your age" />
+      
+       <button type="submit">Submit</button>
      </form>
 
+ {showData && (
+      <div>
+          <h2>Student Details</h2>
+          <p>Name: {showData.name}</p>
+          <p>Email: {showData.email}</p>
+          <p>Age: {showData.age}</p>
+        </div>
+      )}
 
-<div>
-  <h1>{showdatas}</h1>
-</div>
 
 
 
-    </div>
+  
   </>)
 }
 
