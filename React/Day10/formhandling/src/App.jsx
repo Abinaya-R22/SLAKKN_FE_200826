@@ -1,24 +1,29 @@
+import  { useState } from "react";
 const App=() => {
-  const[showname, setshowName] = useState("");
-  const[showage, setshowAge] = useState("");
-  const[shownumber, setshowNumber] = useState("");
+  const[username, setUsername] = useState("");
+   const[showname, setShowName] = useState("");
   
-  const handleChangeName = (e) => {
-    setshowName(e.target.value);
-  }
-  const handleChangeAge = (e) => {
-    setshowAge(e.target.value);
-  }
-  const handleChangeNumber = (e) => {
-    setshowNumber(e.target.value);
-  }
+  const handleChangeName = (event) => {
+    // console.log("Event Object:", event);
+    // console.log("Target:", event.target);
+    // console.log("Value:", event.target.value);
+    setUsername(event.target.value);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Submitted Name:", username);
+    setShowName(username);
+    alert(`Submitted Name: ${username}`);
+  };
   return (<>
   <div>
-    <form action="">
-      <input type="text" placeholder="Enter your name" onClick={handleChangeName}/>
-      <input type="text" placeholder="Enter your age"  onClick={handleChangeAge} />
-      <input type="text" placeholder="Enter your number"  onClick={handleChangeNumber} />
-      <button type="submit">Submit</button>
+    <h2>Single Input Form</h2>
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="Enter your name" value={username} onChange={handleChangeName}/>
+      <button type="submit">Submit Name</button>
     </form>
+    <h4>Entered Name: {showname}</h4>
     </div>
-  </>)}
+  </>)
+  }
+  export default App;
