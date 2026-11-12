@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Tasks</title>
+    <style>
+        :root {
+            --site-background: #0d1b2a;
+            --card-background: #1b263b;
+            --button-background: #3a86ff;
+            --button-hover: #2563eb;
+            --text-color: #f5f7fa;
+            --accent-color: #415a77;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: var(--site-background);
+            color: var(--text-color)
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            background: var(--site-background);
+            border-bottom: 1px solid var(--accent-color)
+        }
+
+        h1 {
+            margin: 0
+        }
+
+        header p {
+            color: var(--text-color)
+        }
+
+        main {
+            width: min(100% - 2rem, 58rem);
+            margin: 2rem auto
+        }
+
+        a {
+            color: var(--text-color);
+            font-weight: 700;
+            text-decoration: none
+        }
+
+        .days {
+            display: grid;
+            gap: 1rem;
+        }
+
+        details {
+            padding: 1rem 1.25rem;
+            border-radius: .75rem;
+            background: var(--card-background);
+            color: var(--text-color);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, .32)
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700
+        }
+
+        .links {
+            display: grid;
+            gap: .6rem;
+            padding-top: 1rem
+        }
+
+        .links a {
+            display: block;
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            background: var(--button-background);
+            color: var(--text-color)
+        }
+
+        .links a:hover {
+            background: var(--button-hover)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>React Tasks</h1>
+        <p>Select a day to open its task output.</p>
+    </header>
+    <main>
+        <p><a href="../index.html">Back to Task Portal</a></p>
+        <section class="days">
+        <details open>
+            <summary>Day 1</summary>
+            <div class="links">
+            <a href="Day1/index.html">Task1</a></div>
+        </details>
+        <details>
+            <summary>Day 2</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/14bd7d40def27c07f1d4ad0a6e33e8e362526941/React/Day2/Tasks/student/src">Task1</a></div>
+        </details>
+        <details>
+            <summary>Day 3</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/493440a54b583a90a4efe32a3da0ebda7e356f76/React/Day3/Tasks">Task1</a></div>
+        </details>
+        <details>
+            <summary>Day 6</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/493440a54b583a90a4efe32a3da0ebda7e356f76/React/Day6/practice/reactrouterdom">Task1</a></div>
+        </details>
+        <details>
+            <summary>Day 7</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/17ccc6ed5d0f9c24d91190ae792dd0125be4759f/React/Day7/rendering">Task</a></div>
+        </details>
+        <details>
+            <summary>Day 8</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/cd75f90709f64c4353c7d812358b9e150465bd68/React/Day8/Task/aorendering/src">Task</a></div>
+        </details>
+        <details>
+            <summary>Day 9</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/18ccf2ebcae0af14a59cfe5e9a70bc269b65d700/React/Day9">Task</a></div>
+        </details>
+        <details>
+            <summary>Day 10</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/1917f9cbe3884fe0a1e465890529f92e7200a8bb/React/Day10">Task</a></div>
+        </details>
+        <details>
+            <summary>Day 11</summary>
+            <div class="links">
+            <a href="https://github.com/Abinaya-R22/SLAKKN_FE_200826/tree/a926fd3fd9edac929bd83cf3cde0f54b82273f9d/React/Day11/taskmanagement">Task</a></div>
+        </details>
+        </section>
+    </main>
+</body>
+</html>
