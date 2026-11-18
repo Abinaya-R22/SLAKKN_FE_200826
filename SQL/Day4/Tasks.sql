@@ -31,7 +31,7 @@ INSERT INTO employees VALUES
 
 select count(*) from employees where department='IT' and salary>30000;
 select department,count(*) as tot_no_emp from employees group by department;
-select department,count(*) from employees where salary>25000 group by department having avg(salary)>40000;
+select department,avg(salary) from employees where salary>25000 group by department having avg(salary)>40000;
  
  
  

@@ -35,6 +35,5 @@ where quantity < 2;
 
 delete from orders where price<500 and quantity < 5;
 
-select order_id, customer_name, quantity
-from orders
-where quantity < 2;
+
+select* from orders;

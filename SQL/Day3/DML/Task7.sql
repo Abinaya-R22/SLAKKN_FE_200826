@@ -12,6 +12,9 @@ updatedat timestamp default current_timestamp,
 status boolean default true
 );
 
+
+
+
 insert into staff (name, department, salary, city, updatedby)
 values
 ('Arun Kumar', 'IT', 35000.00, 'Chennai', 'Admin' ),
@@ -23,6 +26,8 @@ values
 ('Rahul S', 'Finance', 40000.00, 'Erode', 'Admin'),
 ('Meena Devi', 'IT', 60000.00, 'Chennai', 'Abi');
 
+select* from staff;
+
 update staff
 set salary=40000
 where staff_id=3;
@@ -31,18 +36,19 @@ update  staff
 set department='IT'
 where staff_id=5; 
 
-update staff
-set salary=salary+5000
-where staff_id=3;
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+
+
 
 update staff
-set salary=40000
-where staff_id=3;
-
-UPDATE staff
-SET salary = salary + 5000
-WHERE department = 'HR';
+set salary = salary + 5000
+where department = 'HR';
 
 update staff 
 set city='chennai'
 where salary>30000;
+
+select* from staff;
